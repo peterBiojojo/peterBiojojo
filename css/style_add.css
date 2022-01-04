@@ -1,0 +1,460 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {font-family: MyCustomFont; /* 同樣的 font-family */unicode-range: U+00-024F;  /* Latin, Latin1 Sup., Ext-A, Ext-B */src: local(Helvetica Neue),     /* OS X preferred */local(Helvetica),         /* Other OS */ local(Arial); /* Other OS */}
+p{font-family: MyCustomFont,"微軟正黑體", sans-serif;letter-spacing: 1px; font-size:16px;}
+h1,h2,h3,h4,h5,h6,a,li,div,input,entry-content{font-family: MyCustomFont,"微軟正黑體", sans-serif;text-shadow: none;}
+input.texts,input.butn,select{ font-family: "Microsoft JhengHei","微軟正黑體",Arial,sans-serif; color:#333;}
+select, textarea, input {color: #000;font-family: "Microsoft JhengHei","微軟正黑體",Arial,sans-serif;}
+
+.nav-md cite.twseName{ font-size:200%; width:100%; text-align:center; display:block;height:auto;font-style:normal; margin: 0; padding:15px 15px 0px 15px;}
+.nav-sm cite.twseName{ font-size:200%; width:100%; text-align:center; display:block;height:auto;font-style:normal; margin: 0;padding:15px 5px 0px 5px;}
+.nav-md h2.twseName{ font-size:200%; width:100%; text-align:center; display:block;height:auto; padding:15px; padding-top:0; margin: 0;}
+.nav-sm h2.twseName{ font-size:120%;  padding:5px; text-align:center; margin-bottom:20px;}
+
+.label-success { background-color: #de5e4f;}
+.bg-green {background: #de5e4f !important;border: 1px solid #de5e4f !important;color: #fff;}
+.nav_title { height: 100px;}
+.nav-sm .nav_title { height: 50px;}
+
+.nav-md .nav.side-menu>li>a{ font-size:133%; }
+.nav.side-menu>li>a:hover, .nav>li>a:focus {text-decoration: none; background:rgba(42, 108, 167, 0.3);}
+h4{ color:#3cabff;}
+a:hover{color:#ec4747;}
+.top_nav h1{ font-size:200%; padding:0.5em; display:inline-block;}
+.top_nav .navbar-right{ width:auto;}
+h1.logo{ width:100%; height:100px;background:url(../images/logo.png) top left no-repeat;background:url(../images/logo.svg) top left no-repeat;width: 100%;height: 100px;padding: 0; margin: 0;display: block;background-position: 0;border: 0;background-size: 100%;}
+.nav-sm h1.logo{ background:url(../images/logo_s.png) top left no-repeat;background:url(../images/logo_s.svg) top left no-repeat;width: 100%;height: 100px;background-position: 50%;background-size: 66%;}
+h3 cite.downer-Numbers{ font-size:60%; font-style:normal!important;}
+h3 strong{ color:#ec4747;}
+.nav-sm h1.logo{height: 50px;}
+
+br.rwd_1{ display:none; line-height:1.5em;}
+table.table{word-wrap: break-word;table-latout: fixed;word-break:break-word;}
+table.table th{ width:auto;}
+.col-md-6.col-sm-6.col-xs-12 .table>tbody>tr:nth-child(1)>td, .col-md-6.col-sm-6.col-xs-12 .table>tbody>tr:nth-child(1)>th{ border-top:0;}
+table.table th,table.table td{ font-size:16px;}
+.top_nav .dropdown-menu li a.red{ color:#d00; text-decoration:none;}
+.top_nav .dropdown-menu li a.red:hover{color:#ff3700; }
+.top_nav .dropdown-menu li a.green{ color:#38842f; text-decoration:none;}
+.top_nav .dropdown-menu li a.green:hover{color:#39a42d; }
+.top_nav .dropdown-menu li a.red i,.top_nav .dropdown-menu li a.green i{ font-size: 33px; display: inline-block; float: left; margin-right: 10px;}
+.col-md-6.col-sm-6.col-xs-12 table.table th{ min-width:140px;}
+.table.StackTable th{ text-align:center;}
+.table.StackTable td{word-break: normal;white-space: initial!important;}
+.table.StackTable td.date,.table.StackTable td.idCode{ text-align:center;}
+.table.StackTable td.nums{ text-align:right;}
+.x_panel_fix .x_content .tag:after{ display:none;}
+select.hourselect{color:#73879C; border::#73879C;}
+
+span.tag{ background-color:#3cabff;}
+span.tagMore{ background-color:#ec4747;}
+.daterangepicker.picker_2 .calendar-table thead tr {color: #3cabff;}
+.btn-success {background: #3cabff;border: 1px solid #3d96da;}
+.btn-success:hover {color: #fff;background-color: #3994d9; border-color: #3d96da;}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {color: #fff; background-color: #3d96da!important;border-color: #3d96da!important;}
+.media .date{ width:100%;}
+.media_fix,.media_fix .date{ padding:10px 0;}
+.media_fix,.media_fix .date p.month{ margin-bottom:5px;}
+.col-md-6.col-sm-6.col-xs-12 table.table td cite.second{font-style:normal;}
+#chartdiv,#graph_bar_group{width: 100%;height: 500px;}
+.dark-div .btn-default, .dark-div button, .dark-div input[type=button], .dark-div input[type=submit] {color: #fff; border: none;}
+.social-icon .fa, .social-icon:before {transform: rotate(0);-ms-transform: rotate(0);-moz-transform: rotate(0);-webkit-transform: rotate(0);}
+.social-icon {transform: rotate(0);-ms-transform: rotate(0);-moz-transform: rotate(0); -webkit-transform: rotate(0); width: 40px;height: 40px;font-size: 14px;margin: 0 5px 11px 6px; padding:0;color: #fff;}
+.dark-div .btn-default, .dark-div button, .dark-div input[type=button], .dark-div input[type=submit] { border: none;}
+.news-social ul.social-list li a.btn-default{ border-radius:50%; border: 0;}
+li.facebook a.social-icon{ background-color:#3b5998;line-height: 3em;}
+li.facebook a.social-icon:hover{ background-color:#4f6ead; color:#fff;}
+li.twitter a.social-icon{ background-color:#41ade2;line-height: 3em;}
+li.twitter a.social-icon:hover{ background-color:#5dc4f6; color:#fff;}
+li.googlePlus a.social-icon{ background-color:#e14938;line-height: 3em;}
+li.googlePlus a.social-icon:hover{ background-color:#f46454; color:#fff;}
+li.print a.social-icon{ background-color:#1abb9c;line-height: 3em;}
+li.print a.social-icon:hover{ background-color:#2acfaf; color:#fff;}
+.list-inline>li i{ font-size:18px;}
+.news-social.marTop_20,p.marTop_20,.col-sm-12.col-xs-12.marTop_20{ margin-top:20px;}
+cite.date{ font-style:normal;}
+.view-mail p{ font-size:150%; line-height:200%; text-align:justify;}
+.view-mail p strong{ color:#ec4747;}
+.mail_heading h4{ font-size:275%;line-height: 140%;}
+.mail_view {border-left: 7px solid #1abb9c;}
+.nav.navbar-nav.navbar-right{ display:none;}
+.h3, h3{ line-height:140%;}
+em.menuBar{ background-color:#1a2938; color:#f88e47; font-style:normal; padding:3%; display:block; line-height:150%; font-weight:bold; font-size:180%; text-align:center;cursor: default;}
+.nav-sm br.rwd_1{ display:block;}
+.nav-sm em.menuBar br.rwd_1{ display:block;}
+.daterangepicker .calendar.single .calendar-table thead tr:first-child th.month,.table-condensed>tbody>tr>td.available{text-align: center}
+.calendar{width: 100%;min-width: 200px;}
+@media (max-width: 1200px){
+a.atch-thumb img{ width:100%; height:auto;}
+}
+@media
+only screen and (max-width: 768px),
+(min-device-width: 768px) and (max-device-width: 1023px)  {
+/* Force table to not be like tables anymore */
+table.StackTable,table.StackTable thead,table.StackTable tbody,table.StackTable th,table.StackTable td,table.StackTable tr {display: block; border: 0;}
+/* Hide table headers (but not display: none;, for accessibility) */
+table.StackTable thead tr {position: absolute;top: -9999px;left: -9999px;}
+
+table.StackTable tr { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;}
+table.StackTable tr:first-child{ border-top: 0;}
+table.StackTable tr:last-child{ border-bottom: 0;}
+table.StackTable td { border: none;border-bottom: 1px dotted #ccc;position: relative; width:100%; }
+table.StackTable>tbody>tr>td{border-top:0;}
+.table.StackTable td:before{font-weight: bold;white-space: initial;color: #73879C!important;}
+/*功能3.歷年股利*/
+#function_03 td:nth-of-type(1):before { content: "年度"; }
+#function_03 td:nth-of-type(2):before { content: "除息交易日"; }
+#function_03 td:nth-of-type(3):before { content: "除權交易日"; }
+#function_03 td:nth-of-type(4):before { content: "除權參考價"; }
+#function_03 td:nth-of-type(5):before { content: "現金股利發放日"; }
+#function_03 td:nth-of-type(6):before { content: "現金股利"; }
+#function_03 td:nth-of-type(7):before { content: "股票股利"; }
+#function_03 td:nth-of-type(8):before { content: "股利合計"; }
+/*功能4.董監持股*/
+#function_04 td:nth-of-type(1):before { content: "項次"; }
+#function_04 td:nth-of-type(2):before { content: "年度-月份"; }
+#function_04 td:nth-of-type(3):before { content: "姓名"; }
+#function_04 td:nth-of-type(4):before { content: "身分別"; }
+#function_04 td:nth-of-type(5):before { content: "本月實際持有股數"; }
+#function_04 td:nth-of-type(6):before { content: "設質股數"; }
+#function_04 td:nth-of-type(7):before { content: "設質比例％"; }
+/*功能5.董監持股*/
+#function_05 td:nth-of-type(1):before { content: "項次"; }
+#function_05 td:nth-of-type(2):before { content: "庫存張數(張)"; }
+#function_05 td:nth-of-type(3):before { content: "增減張數"; }
+#function_05 td:nth-of-type(4):before { content: "增減比率(%)"; }
+#function_05 td:nth-of-type(5):before { content: "集保率"; }
+/*功能6.質借概況*/
+.table.StackTable td:before{font-weight: bold;white-space: initial;color: #73879C!important;}
+#function_06 td:nth-of-type(1):before { content: "項次"; }
+#function_06 td:nth-of-type(2):before { content: "設定人身分"; }
+#function_06 td:nth-of-type(3):before { content: "設定人姓名"; }
+#function_06 td:nth-of-type(4):before { content: "質權設定(股)"; }
+#function_06 td:nth-of-type(5):before { content: "設定日期"; }
+#function_06 td:nth-of-type(6):before { content: "質權撤銷(股)"; }
+#function_06 td:nth-of-type(7):before { content: "撤銷日期"; }
+#function_06 td:nth-of-type(8):before { content: "質押餘額佔持股比率%"; }
+#function_06 td:nth-of-type(9):before { content: "質權人"; }
+#function_06 td:nth-of-type(10):before { content: "累計設定"; }
+/*功能7.持股轉讓*/
+#function_07 td:nth-of-type(1):before { content: "申報日期"; }
+#function_07 td:nth-of-type(2):before { content: "申報人身分"; }
+#function_07 td:nth-of-type(3):before { content: "名稱"; }
+#function_07 td:nth-of-type(4):before { content: "轉讓方式"; }
+#function_07 td:nth-of-type(5):before { content: "受讓人"; }
+#function_07 td:nth-of-type(6):before { content: "目前持有股數"; }
+#function_07 td:nth-of-type(7):before { content: "轉讓股數"; }
+#function_07 td:nth-of-type(8):before { content: "轉讓後股數"; }
+#function_07 td:nth-of-type(9):before { content: "申報轉讓股數佔持有股數%";}
+/*功能8.三大法人*/
+#function_08 td:nth-of-type(1):before { content: "日期"; }
+#function_08 td:nth-of-type(2):before { content: "外資"; }
+#function_08 td:nth-of-type(3):before { content: "投信"; }
+#function_08 td:nth-of-type(4):before { content: "自營商"; }
+#function_08 td:nth-of-type(5):before { content: "單日合計"; }
+#function_08 td:nth-of-type(6):before { content: "外資"; }
+#function_08 td:nth-of-type(7):before { content: "投信"; }
+#function_08 td:nth-of-type(8):before { content: "自營商"; }
+#function_08 td:nth-of-type(9):before { content: "合計%";}
+/*功能10.壓力支撐*/
+#function_10 td:nth-of-type(1):before { content: "日期"; }
+#function_10 td:nth-of-type(2):before { content: "收盤"; }
+#function_10 td:nth-of-type(3):before { content: "壓力一"; }
+#function_10 td:nth-of-type(4):before { content: "支撐一"; }
+#function_10 td:nth-of-type(5):before { content: "壓力二"; }
+#function_10 td:nth-of-type(6):before { content: "支撐二"; }
+/*功能11.融資融券*/
+#function_11 td:nth-of-type(1):before { content: "日期"; }
+#function_11 td:nth-of-type(2):before { content: "資餘"; }
+#function_11 td:nth-of-type(3):before { content: "資增"; }
+#function_11 td:nth-of-type(4):before { content: "券餘"; }
+#function_11 td:nth-of-type(5):before { content: "券增"; }
+#function_11 td:nth-of-type(6):before { content: "券資比%"; }
+#function_11 td:nth-of-type(7):before { content: "資券互抵"; }
+/*功能12.每月營收*/
+#function_12 th:nth-of-type(1):before { content: ""; display:none;}
+#function_12 th:nth-of-type(2):before { content: "單期營業收入"; display:none;}
+#function_12 th:nth-of-type(3):before { content: "累計營業收入"; display:none;}
+#function_12 td:nth-of-type(1):before { content: "月份"; }
+#function_12 td:nth-of-type(2):before { content: "月營收"; }
+#function_12 td:nth-of-type(3):before { content: "月增率%"; }
+#function_12 td:nth-of-type(4):before { content: "去年同期營收"; }
+#function_12 td:nth-of-type(5):before { content: "年增率%"; }
+#function_12 td:nth-of-type(6):before { content: "累計營收";}
+#function_12 td:nth-of-type(7):before { content: "去年累計營收";}
+#function_12 td:nth-of-type(8):before { content: "累計年增率%";}
+/*功能13.營益比率*/
+#function_13 td:nth-of-type(1):before { content: "年/季";}
+#function_13 td:nth-of-type(2):before { content: "季營收";}
+#function_13 td:nth-of-type(3):before { content: "毛利率%";}
+#function_13 td:nth-of-type(4):before { content: "營業利益率%"; }
+#function_13 td:nth-of-type(5):before { content: "稅前純益率%"; }
+#function_13 td:nth-of-type(6):before { content: "稅後純益成長率%"; }
+/*功能14.損益表*/
+#function_14 td:nth-of-type(1):before { content: "年度/季別"; }
+#function_14 td:nth-of-type(2):before { content: "營業收入"; }
+#function_14 td:nth-of-type(3):before { content: "營業成本"; }
+#function_14 td:nth-of-type(4):before { content: "營業毛利"; }
+#function_14 td:nth-of-type(5):before { content: "營業利益"; }
+#function_14 td:nth-of-type(6):before { content: "業外損益"; }
+#function_14 td:nth-of-type(7):before { content: "稅前淨利"; }
+#function_14 td:nth-of-type(8):before { content: "稅後淨利"; }
+/*功能15.資產負債表*/
+#function_15 td:nth-of-type(1):before { content: "年度/季別"; }
+#function_15 td:nth-of-type(2):before { content: "流動資產"; }
+#function_15 td:nth-of-type(3):before { content: "長期投資"; }
+#function_15 td:nth-of-type(4):before { content: "固定資產"; }
+#function_15 td:nth-of-type(5):before { content: "流動負債"; }
+#function_15 td:nth-of-type(6):before { content: "長期負債"; }
+#function_15 td:nth-of-type(7):before { content: "股東權益"; }
+#function_15 td:nth-of-type(8):before { content: "每股淨值"; }
+/*功能16.現金流量表*/
+#function_16 td:nth-of-type(1):before { content: "年度/季別"; }
+#function_16 td:nth-of-type(2):before { content: "營業現金流"; }
+#function_16 td:nth-of-type(3):before { content: "投資現金流"; }
+#function_16 td:nth-of-type(4):before { content: "融資現金流"; }
+#function_16 td:nth-of-type(5):before { content: "淨現金流"; }
+/*功能17.類股個股收盤*/
+#function_17 td:nth-of-type(1):before { content: "代碼"; }
+#function_17 td:nth-of-type(2):before { content: "股票名稱"; }
+#function_17 td:nth-of-type(3):before { content: "收盤價"; }
+#function_17 td:nth-of-type(4):before { content: "漲跌"; }
+#function_17 td:nth-of-type(5):before { content: "最高價"; }
+#function_17 td:nth-of-type(6):before { content: "最低價"; }
+#function_17 td:nth-of-type(7):before { content: "成交張數"; }
+#function_17 td:nth-of-type(8):before { content: "成交筆數"; }
+#function_17 td:nth-of-type(9):before { content: "成交金額"; }
+#function_17 td:nth-of-type(10):before { content: "本益比"; }
+/*功能18.熱門排行*/
+#function_18 td:nth-of-type(1):before { content: "名次"; }
+#function_18 td:nth-of-type(2):before { content: "代碼"; }
+#function_18 td:nth-of-type(3):before { content: "股票名稱"; }
+#function_18 td:nth-of-type(4):before { content: "收盤價"; }
+#function_18 td:nth-of-type(5):before { content: "漲跌"; }
+#function_18 td:nth-of-type(6):before { content: "漲跌幅"; }
+#function_18 td:nth-of-type(7):before { content: "成交張數"; }
+#function_18 td:nth-of-type(8):before { content: "成交金額"; }
+#function_18 td:nth-of-type(9):before { content: "本益比"; }
+/*功能18_2.熱門排行*/
+#function_18_2 td:nth-of-type(1):before { content: "名次"; }
+#function_18_2 td:nth-of-type(2):before { content: "代碼"; }
+#function_18_2 td:nth-of-type(3):before { content: "股票名稱"; }
+#function_18_2 td:nth-of-type(4):before { content: "融資利用率"; }
+#function_18_2 td:nth-of-type(5):before { content: "融券利用率"; }
+#function_18_2 td:nth-of-type(6):before { content: "資餘"; }
+#function_18_2 td:nth-of-type(7):before { content: "資增"; }
+#function_18_2 td:nth-of-type(8):before { content: "券餘"; }
+#function_18_2 td:nth-of-type(9):before { content: "券增"; }
+#function_18_2 td:nth-of-type(10):before { content: "券資比%"; }
+#function_18_2 td:nth-of-type(11):before { content: "資券互抵"; }
+/*功能19.三大法人買賣彙總表*/
+#function_19 th:nth-of-type(1):before { content: ""; display:none;}
+#function_19 th:nth-of-type(2):before { content: "三大法人買賣  (單位:億元 )"; display:none;}
+#function_19 th:nth-of-type(3):before { content: "摩台期指 (單位:口 )"; display:none;}
+#function_19 td:nth-of-type(1):before { content: "日期"; }
+#function_19 td:nth-of-type(2):before { content: "外資"; }
+#function_19 td:nth-of-type(3):before { content: "投信"; }
+#function_19 td:nth-of-type(4):before { content: "自營商"; }
+#function_19 td:nth-of-type(5):before { content: "單日合計"; }
+#function_19 td:nth-of-type(6):before { content: "成交量";}
+#function_19 td:nth-of-type(7):before { content: "未平倉";}
+/*功能20.外資個股買賣超前30名*/
+#function_20 td:nth-of-type(1):before { content: "名次"; }
+#function_20 td:nth-of-type(2):before { content: "代碼"; }
+#function_20 td:nth-of-type(3):before { content: "股票名稱"; }
+#function_20 td:nth-of-type(4):before { content: "成交價"; }
+#function_20 td:nth-of-type(5):before { content: "漲跌幅"; }
+#function_20 td:nth-of-type(6):before { content: "買超張數"; }
+#function_20 td:nth-of-type(7):before { content: "買超市值(仟元)"; }
+#function_20 td:nth-of-type(8):before { content: "外資持股比率"; }
+/*功能20_2.外資個股買賣超前30名*/
+#function_20_2 td:nth-of-type(1):before { content: "名次"; }
+#function_20_2 td:nth-of-type(2):before { content: "代碼"; }
+#function_20_2 td:nth-of-type(3):before { content: "股票名稱"; }
+#function_20_2 td:nth-of-type(4):before { content: "成交價"; }
+#function_20_2 td:nth-of-type(5):before { content: "漲跌幅"; }
+#function_20_2 td:nth-of-type(6):before { content: "賣超張數"; }
+#function_20_2 td:nth-of-type(7):before { content: "賣超市值(仟元)"; }
+#function_20_2 td:nth-of-type(8):before { content: "外資持股比率"; }
+/*功能21.投信個股買賣超前30名*/
+#function_21 td:nth-of-type(1):before { content: "名次"; }
+#function_21 td:nth-of-type(2):before { content: "代碼"; }
+#function_21 td:nth-of-type(3):before { content: "股票名稱"; }
+#function_21 td:nth-of-type(4):before { content: "成交價"; }
+#function_21 td:nth-of-type(5):before { content: "漲跌幅"; }
+#function_21 td:nth-of-type(6):before { content: "買超張數"; }
+#function_21 td:nth-of-type(7):before { content: "買超市值(仟元)"; }
+#function_21 td:nth-of-type(8):before { content: "投信持股比率"; }
+/*功能21_2.投信個股買賣超前30名*/
+#function_21_2 td:nth-of-type(1):before { content: "名次"; }
+#function_21_2 td:nth-of-type(2):before { content: "代碼"; }
+#function_21_2 td:nth-of-type(3):before { content: "股票名稱"; }
+#function_21_2 td:nth-of-type(4):before { content: "成交價"; }
+#function_21_2 td:nth-of-type(5):before { content: "漲跌幅"; }
+#function_21_2 td:nth-of-type(6):before { content: "賣超張數"; }
+#function_21_2 td:nth-of-type(7):before { content: "賣超市值(仟元)"; }
+#function_21_2 td:nth-of-type(8):before { content: "投信持股比率"; }
+/*功能22.自營商個股買賣超前30名*/
+#function_22 td:nth-of-type(1):before { content: "名次"; }
+#function_22 td:nth-of-type(2):before { content: "代碼"; }
+#function_22 td:nth-of-type(3):before { content: "股票名稱"; }
+#function_22 td:nth-of-type(4):before { content: "成交價"; }
+#function_22 td:nth-of-type(5):before { content: "漲跌幅"; }
+#function_22 td:nth-of-type(6):before { content: "買超張數"; }
+#function_22 td:nth-of-type(7):before { content: "買超市值(仟元)"; }
+#function_22 td:nth-of-type(8):before { content: "自營商持股比率"; }
+/*功能22_2.自營商個股買賣超前30名*/
+#function_22_2 td:nth-of-type(1):before { content: "名次"; }
+#function_22_2 td:nth-of-type(2):before { content: "代碼"; }
+#function_22_2 td:nth-of-type(3):before { content: "股票名稱"; }
+#function_22_2 td:nth-of-type(4):before { content: "成交價"; }
+#function_22_2 td:nth-of-type(5):before { content: "漲跌幅"; }
+#function_22_2 td:nth-of-type(6):before { content: "賣超張數"; }
+#function_22_2 td:nth-of-type(7):before { content: "賣超市值(仟元)"; }
+#function_22_2 td:nth-of-type(8):before { content: "自營商持股比率"; }
+/*功能24.市場融資融券餘額*/
+#function_24 td:nth-of-type(1):before { content: "日期"; }
+#function_24 td:nth-of-type(2):before { content: "資增(億)"; }
+#function_24 td:nth-of-type(3):before { content: "融資餘額(億)"; }
+#function_24 td:nth-of-type(4):before { content: "券增(張)"; }
+#function_24 td:nth-of-type(5):before { content: "融券餘額(張)"; }
+#function_24 td:nth-of-type(6):before { content: "加權指數"; }
+#function_24 td:nth-of-type(7):before { content: "成交量(億)"; }
+/*功能25.資增個股排行*/
+#function_25 td:nth-of-type(1):before { content: "名次"; }
+#function_25 td:nth-of-type(2):before { content: "代碼"; }
+#function_25 td:nth-of-type(3):before { content: "股票名稱"; }
+#function_25 td:nth-of-type(4):before { content: "融資增加"; }
+#function_25 td:nth-of-type(5):before { content: "融資餘額"; }
+#function_25 td:nth-of-type(6):before { content: "融券增加"; }
+#function_25 td:nth-of-type(7):before { content: "融券餘額"; }
+#function_25 td:nth-of-type(8):before { content: "資券相抵"; }
+#function_25 td:nth-of-type(9):before { content: "收盤價"; }
+#function_25 td:nth-of-type(10):before { content: "漲跌"; }
+#function_25 td:nth-of-type(11):before { content: "漲跌比例"; }
+#function_25 td:nth-of-type(12):before { content: "成交量"; }
+/*功能26.資減個股排行*/
+#function_26 td:nth-of-type(1):before { content: "名次"; }
+#function_26 td:nth-of-type(2):before { content: "代碼"; }
+#function_26 td:nth-of-type(3):before { content: "股票名稱"; }
+#function_26 td:nth-of-type(4):before { content: "融資增加"; }
+#function_26 td:nth-of-type(5):before { content: "融資餘額"; }
+#function_26 td:nth-of-type(6):before { content: "融券增加"; }
+#function_26 td:nth-of-type(7):before { content: "融券餘額"; }
+#function_26 td:nth-of-type(8):before { content: "資券相抵"; }
+#function_26 td:nth-of-type(9):before { content: "收盤價"; }
+#function_26 td:nth-of-type(10):before { content: "漲跌"; }
+#function_26 td:nth-of-type(11):before { content: "漲跌比例"; }
+#function_26 td:nth-of-type(12):before { content: "成交量"; }
+/*功能27.券增個股排行*/
+#function_27 td:nth-of-type(1):before { content: "名次"; }
+#function_27 td:nth-of-type(2):before { content: "代碼"; }
+#function_27 td:nth-of-type(3):before { content: "股票名稱"; }
+#function_27 td:nth-of-type(4):before { content: "融資增加"; }
+#function_27 td:nth-of-type(5):before { content: "融資餘額"; }
+#function_27 td:nth-of-type(6):before { content: "融券增加"; }
+#function_27 td:nth-of-type(7):before { content: "融券餘額"; }
+#function_27 td:nth-of-type(8):before { content: "資券相抵"; }
+#function_27 td:nth-of-type(9):before { content: "收盤價"; }
+#function_27 td:nth-of-type(10):before { content: "漲跌"; }
+#function_27 td:nth-of-type(11):before { content: "漲跌比例"; }
+#function_27 td:nth-of-type(12):before { content: "成交量"; }
+/*功能28.券減個股排行*/
+#function_28 td:nth-of-type(1):before { content: "名次"; }
+#function_28 td:nth-of-type(2):before { content: "代碼"; }
+#function_28 td:nth-of-type(3):before { content: "股票名稱"; }
+#function_28 td:nth-of-type(4):before { content: "融資增加"; }
+#function_28 td:nth-of-type(5):before { content: "融資餘額"; }
+#function_28 td:nth-of-type(6):before { content: "融券增加"; }
+#function_28 td:nth-of-type(7):before { content: "融券餘額"; }
+#function_28 td:nth-of-type(8):before { content: "資券相抵"; }
+#function_28 td:nth-of-type(9):before { content: "收盤價"; }
+#function_28 td:nth-of-type(10):before { content: "漲跌"; }
+#function_28 td:nth-of-type(11):before { content: "漲跌比例"; }
+#function_28 td:nth-of-type(12):before { content: "成交量"; }
+/*功能29.資券互抵排行*/
+#function_29 td:nth-of-type(1):before { content: "名次"; }
+#function_29 td:nth-of-type(2):before { content: "代碼"; }
+#function_29 td:nth-of-type(3):before { content: "股票名稱"; }
+#function_29 td:nth-of-type(4):before { content: "資券相抵"; }
+#function_29 td:nth-of-type(5):before { content: "融資增加"; }
+#function_29 td:nth-of-type(6):before { content: "融資餘額"; }
+#function_29 td:nth-of-type(7):before { content: "融券增加"; }
+#function_29 td:nth-of-type(8):before { content: "融券餘額"; }
+#function_29 td:nth-of-type(9):before { content: "收盤價"; }
+#function_29 td:nth-of-type(10):before { content: "漲跌"; }
+#function_29 td:nth-of-type(11):before { content: "漲跌比例"; }
+#function_29 td:nth-of-type(12):before { content: "成交量"; }
+/*功能34.持股轉讓總表*/
+#function_34 td:nth-of-type(1):before { content: "項次";}
+#function_34 td:nth-of-type(2):before { content: "公司代碼";}
+#function_34 td:nth-of-type(3):before { content: "公司名稱";}
+#function_34 td:nth-of-type(4):before { content: "申報人身分"; }
+#function_34 td:nth-of-type(5):before { content: "名稱"; }
+#function_34 td:nth-of-type(6):before { content: "轉讓方式"; }
+#function_34 td:nth-of-type(7):before { content: "受讓人"; }
+#function_34 td:nth-of-type(8):before { content: "目前持有股數"; }
+#function_34 td:nth-of-type(9):before { content: "轉讓股數"; }
+#function_34 td:nth-of-type(10):before { content: "轉讓後股數"; }
+#function_34 td:nth-of-type(11):before { content: "申報轉讓股數佔持有股數%"; }
+/*功能37.除權除息總表*/
+#function_37 td:nth-of-type(1):before { content: "項次";}
+#function_37 td:nth-of-type(2):before { content: "公司代碼";}
+#function_37 td:nth-of-type(3):before { content: "公司名稱";}
+#function_37 td:nth-of-type(4):before { content: "除權息交易日"; }
+#function_37 td:nth-of-type(5):before { content: "配息"; }
+#function_37 td:nth-of-type(6):before { content: "資配"; }
+#function_37 td:nth-of-type(7):before { content: "盈配"; }
+#function_37 td:nth-of-type(8):before { content: "現增配股"; }
+#function_37 td:nth-of-type(9):before { content: "認購價"; }
+#function_37 td:nth-of-type(10):before { content: "停止過戶日"; }
+#function_37 td:nth-of-type(11):before { content: "繳款日"; }	
+/*功能38.股東會總表*/
+#function_38 td:nth-of-type(1):before { content: "項次";}
+#function_38 td:nth-of-type(2):before { content: "公司代碼";}
+#function_38 td:nth-of-type(3):before { content: "公司名稱";}
+#function_38 td:nth-of-type(4):before { content: "日期"; }
+#function_38 td:nth-of-type(5):before { content: "地點"; }
+#function_38 td:nth-of-type(6):before { content: "停止過戶"; }
+#function_38 td:nth-of-type(7):before { content: "券補日"; }
+#function_38 td:nth-of-type(8):before { content: "會議性質"; }
+#function_38 td:nth-of-type(9):before { content: "董監改選"; }
+
+table.StackTable td:before {  position: relative; top: 0;left: 0px; display: inline-block; width: 240px;white-space: nowrap;}
+.table.StackTable th,.table.StackTable td.date,.table.StackTable td.nums,.table.StackTable td.idCode{ text-align:left;}
+}
+
+@media (max-width: 768px){
+br.rwd_1{ display:block;}
+table.StackTable td:before {/* Now like a table header */position: absolute;/* Top/left values mimic padding */top: 6px;left: 0px;width: 220px;white-space: nowrap;}
+/*Label the data*/
+.col-md-6.col-sm-6.col-xs-12 .table{ margin-bottom:0;}
+.col-md-6.col-sm-6.col-xs-12:nth-child(2) .table>tbody>tr:nth-child(1)>td, .col-md-6.col-sm-6.col-xs-12:nth-child(2) .table>tbody>tr:nth-child(1)>th{ border-top:1px dotted #ccc;}
+table.StackTable td:before {  position: relative; top: 0;left: 0px; display: inline-block; width: 45%;white-space: nowrap;}
+table.StackTable td:last-child{ border-bottom:0;}
+.table-responsive{ border:0;}
+.col-md-6.col-sm-6.col-xs-12 .table>tbody>tr>td,.col-md-6.col-sm-6.col-xs-12 .table>tbody>tr>th{ border-top:1px dotted #ccc;}
+.table.StackTable th,.table.StackTable td.date,.table.StackTable td.nums,.table.StackTable td.idCode{ text-align:left;}
+.col-md-6.col-sm-6.col-xs-12.marTop_20,.col-sm-6.col-xs-12.marTop_20{ margin-top:20px;}
+}
+
+@media (max-width: 480px){
+br.rwd_1{ display:block;}
+table.table th{ width:170px;}
+table.StackTable td:before {  position: relative; top: 0;left: 0px; display: inline-block; width: 170px;white-space: nowrap;}
+.well{ padding:7px;}
+.pull-left.dateSearch{ float:none!important; display:block;}
+.col-md-6.col-sm-6.col-xs-12 table.table th.col-xs-3{ min-width:auto!important;}
+.col-md-6.col-sm-6.col-xs-12 table.table td cite.second{ display:block;}
+.mail_view,.mail_list_column{border-left:0;}
+.view-mail p{ font-size:120%; line-height:175%;}
+.mail_heading h4{ font-size:225%;line-height: 140%;}
+fieldset.fix{ display:inline-block;}
+em.menuBar{ font-size:160%;}
+}
+
+@media (max-width: 320px){
+table.table th{ width:140px;}
+table.StackTable td:before { width: 140px;}
+.pull-right.listBack{ float:left!important;}
+}
