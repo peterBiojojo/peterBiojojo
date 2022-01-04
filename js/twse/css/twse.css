@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul#twseIcon{ display:block;}
+ul#twseIcon i.twse00{ width:36px; height:32px; display:inline-block;}
+ul#twseIcon i.twse00:before{ background:url(../images/icons.png) 0 0 no-repeat; background:url(../images/icons.svg) 0 0 no-repeat; width:32px; height:32px; display:inline-block;content: "";background-size: 600%;vertical-align: -8px;}
+ul#twseIcon i.twse01:before{ background-position:0px 0px;}
+ul#twseIcon i.twse02:before{ background-position:-32px 0px;}
+ul#twseIcon i.twse03:before{ background-position:-64px 0px;}
+ul#twseIcon i.twse04:before{ background-position:-96px 0px;}
+ul#twseIcon i.twse05:before{ background-position:-128px 0px;}
+ul#twseIcon i.twse06:before{ background-position:-160px 0px;}
+ul#twseIcon i.twse07:before{ background-position:0px -32px;}
+ul#twseIcon i.twse08:before{ background-position:-32px -32px;}
+ul#twseIcon i.twse09:before{ background-position:-64px -32px;}
+ul#twseIcon i.twse10:before{ background-position:-96px -32px;}
+ul#twseIcon i.twse11:before{ background-position:-128px -32px;}
+ul#twseIcon i.twse12:before{ background-position:-160px -32px;}
+ul#twseIcon i.twse13:before{ background-position:-0px -64px;}
+ul#twseIcon i.twse14:before{ background-position:-32px -64px;}
+ul#twseIcon i.twse15:before{ background-position:-64px -64px;}
+ul#twseIcon i.twse16:before{ background-position:-96px -64px;}
+ul#twseIcon i.twse17:before{ background-position:-128px -64px;}
+ul#twseIcon i.twse18:before{ background-position:-160px -64px;}
+ul#twseIcon i.twse19:before{ background-position:0px -96px;}
+ul#twseIcon i.twse20:before{ background-position:-32px -96px;}
+ul#twseIcon i.twse21:before{ background-position:-64px -96px;}
+ul#twseIcon i.twse22:before{ background-position:-96px -96px;}
+ul#twseIcon i.twse23:before{ background-position:-128px -96px;}
+ul#twseIcon i.twse24:before{ background-position:-160px -96px;}
+ul#twseIcon i.twse25:before{ background-position:0px -128px;}
+ul#twseIcon i.twse26:before{ background-position:-32px -128px;}
+ul#twseIcon i.twse27:before{ background-position:-64px -128px;}
+ul#twseIcon i.twse28:before{ background-position:-96px -128px;}
+ul#twseIcon i.twse29:before{ background-position:-128px -128px;}
+ul#twseIcon i.twse30:before{ background-position:-160px -128px;}
+ul#twseIcon i.twse31:before{ background-position:0px -160px;}
+ul#twseIcon i.twse32:before{ background-position:-32px -160px;}
+ul#twseIcon i.twse33:before{ background-position:-64px -160px;}
+ul#twseIcon i.twse34:before{ background-position:-96px -160px;}
+ul#twseIcon i.twse35:before{ background-position:-128px -160px;}
+ul#twseIcon i.twse36:before{ background-position:-160px -160px;}
